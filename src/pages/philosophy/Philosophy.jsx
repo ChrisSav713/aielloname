@@ -59,10 +59,7 @@ const Philosophy = () => {
                     </p>
                   </blockquote>
                   <figcaption className='mt-6 text-sm leading-6 text-gray-300'>
-                    <strong className='font-semibold text-white'>
-                      Judith Rogers,
-                    </strong>{' '}
-                    CEO at Workcation
+                    <strong className='font-semibold text-white'></strong>{' '}
                   </figcaption>
                 </figure>
               </div>
@@ -73,7 +70,7 @@ const Philosophy = () => {
                   Company values
                 </p>
                 <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-                  On a mission to empower remote teams
+                  Our guiding principles
                 </h1>
                 <div className='max-w-xl'>
                   <p className='mt-6'>
@@ -100,24 +97,12 @@ const Philosophy = () => {
                   </p>
                 </div>
               </div>
-              <dl className='grid grid-cols-2 gap-8 pt-10 mt-10 border-t border-gray-900/10 sm:grid-cols-4'>
-                {stats.map((stat, statIdx) => (
-                  <div key={statIdx}>
-                    <dt className='text-sm font-semibold leading-6 text-gray-600'>
-                      {stat.label}
-                    </dt>
-                    <dd className='mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900'>
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+
               <div className='flex mt-10'>
                 <a
                   href='#'
                   className='text-base font-semibold leading-7 text-indigo-600'
                 >
-                  Learn more about our company{' '}
                   <span aria-hidden='true'>&rarr;</span>
                 </a>
               </div>

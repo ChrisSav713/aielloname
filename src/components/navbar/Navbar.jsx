@@ -103,7 +103,9 @@ export default function Navbar() {
       href: '/testimonials'
     }
   ]
-
+  const handleclick = () => {
+    navigate('/')
+  }
   return (
     <>
       {/* <li>
@@ -130,11 +132,14 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className='flex items-center content-center justify-center flex-grow-1'>
                   <div className='flex items-center content-between justify-between center flex-grow-1'>
-                    <img
-                      className='w-auto h-8 px-5'
-                      src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-                      alt='Logo'
-                    />
+                    <a href='/'>
+                      <img
+                        className='w-auto h-8 px-5'
+                        src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                        alt='Logo'
+                        onClick={handleclick}
+                      />
+                    </a>
                     <Flyout
                       className='flex items-center pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent flex-grow-1 px-9 hover:border-gray-300 hover:text-gray-700'
                       title={'About'}

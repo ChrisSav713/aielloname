@@ -20,10 +20,10 @@ import Signup from './pages/signup/Signup'
 import Tools from './pages/resources/Tools'
 import Guidance from './pages/resources/Guidance'
 import Staff from './pages/about/Staff'
-import Future from './pages/about/Future'
+import Future from './pages/philosophy/Future'
 import Location from './pages/about/Location'
-import News from './pages/news/News'
-import Blog from './pages/blog/Blog'
+import News from './pages/trends/News'
+import Blog from './pages/trends/Blog'
 import { useAuthContext } from './hooks/useAuthContext'
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
           <Routes>
             <Route
               path='/'
-              element={user ? <Home /> : <Navigate to='/login' replace />}
+              element={user ? <Dashboard /> : <Navigate to='/login' replace />}
             />
             <Route
               path='/login'
